@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import FlatSurfaceShader from 'vue-flat-surface-shader'
+
+Vue.use(FlatSurfaceShader)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
