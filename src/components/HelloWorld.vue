@@ -1,11 +1,10 @@
 <template>
-<div>
-二十四节气
+<div class="page_home">
+<h4>二十四节气</h4>
 <!-- <h4 class="" v-for='item in list'>{{item}}</h4> -->
-<div v-for='item in list'>
+<div v-for='item in list' class="list_card">
   <card :name="item"> </card>
 </div>
-
 <!--  <flat-surface-shader type="webgl" 
                          :light="{ambient: '#BD9019', diffuse: '#F1AAA6'}"
                          width=2000
@@ -39,7 +38,23 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped >
+
+.page_home{
+  max-width: 600px;
+  text-align: center;
+  /*background-color: red;*/
+  margin: 0 auto !important;
+}
+
+.list_card {
+  width: 100px;
+
+  margin: 5px auto;
+
+}
+
+
 .shader {
       width: 100vw;
       height: 100vh;
